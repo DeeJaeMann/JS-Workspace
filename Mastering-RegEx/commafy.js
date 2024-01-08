@@ -28,12 +28,13 @@ function CheckAnswer(strInput) {
         */
         let regexCommaReplacePattern = /(?<=\d)(?=(?:\d{3})+(?!\d))/g
 
-        //strInput.replace(regexCommaReplacePattern, ',');
+        // We call the replace() method with our regex as our search pattern and our comma as our replacement string
         strInput = strInput.replace(regexCommaReplacePattern, ',');
 
         console.log(strInput);
     }
     else {
+        // We didn't get the expected input
         console.log("Please enter at least 4 digits!");
     }
 }
