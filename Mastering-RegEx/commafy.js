@@ -54,6 +54,9 @@ let strLine = readline.createInterface({
 // Prompt for the number we wish to convert
 // We're pushing our input into our child function for processing
 // There is most likely a better way to do this.
+// I pulled this method to get user input from the console from Stack Overflow
+// https://stackoverflow.com/questions/61394928/get-user-input-through-node-js-console
+// I chose the solution that did not require any additional module installs
 strLine.question("Please enter a number greater than 999.\nThe greater the number the better: ", assignAnswer => {
     CheckAnswer(assignAnswer);
     strLine.close();
