@@ -5,7 +5,7 @@
      than 999 for readability
  */
 
-function CheckAnswer(strInput) {
+function ConvertAnswer(strInput) {
     /* RegEx:
         ^ - Beginning of the line
         \d{4,} - Match 4 or more digits
@@ -58,7 +58,7 @@ let strLine = readline.createInterface({
 // https://stackoverflow.com/questions/61394928/get-user-input-through-node-js-console
 // I chose the solution that did not require any additional module installs
 strLine.question("Please enter a number greater than 999.\nThe greater the number the better: ", assignAnswer => {
-    CheckAnswer(assignAnswer);
+    ConvertAnswer(assignAnswer);
     strLine.close();
 });
 
