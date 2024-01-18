@@ -20,7 +20,8 @@ function ConvertAnswer(strInput) {
             \d  - Match exactly 1 digit
             ?=  - Positive Lookahead (Can we match this pattern after our current position)
             ()  - Group
-            (?: - Do NOT assign this group to a varialbe (By default this would have been assigned to \1)
+            (?: - Do NOT assign this group to a variable (By default this would have been assigned to \1) (Most languages also assign to a variable name
+                    outside of the RegEx pattern ie. Perl would assign it to $1 which can be used elsewhere.  TODO: Verifiy if JS does this)
             \d{3} - Match exactly 3 digits
             ()+ - Match this group 1 or more times
             ?!  - Negative Lookahead (Can we make sure we do not have a match for this pattern after our current position)
