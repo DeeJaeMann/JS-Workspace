@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/bin/env node
 
 /*
     Example of how to use a regular expression to insert commas into a number greater
